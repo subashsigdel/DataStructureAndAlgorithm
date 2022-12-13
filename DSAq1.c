@@ -61,11 +61,22 @@ int peek(struct Stack* stack)
 // Driver program to test above functions
 int main()
 {
+	int number1 , number2, number3, number4;
 	struct Stack* stack = createStack(100);
 
-	push(stack, 10);
-	push(stack, 20);
-	push(stack, 30);
+	printf("enter number to push on stack : \n");
+	scanf("%d",& number1);
+		printf("enter number to push on stack : \n");
+	scanf("%d",& number2);
+		printf("enter number to push on stack : \n");
+	scanf("%d",& number3);
+			printf("enter number to push on stack : \n");
+	scanf("%d",& number4);
+
+	push(stack, number1);
+	push(stack, number2);
+	push(stack, number3);
+	push(stack,number4);
 
 	printf("%d popped from stack\n", pop(stack));
 
